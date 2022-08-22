@@ -13,9 +13,7 @@ use App\Http\Controllers\ekleController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', function () {return view('x');});
+Route::post('/',[\App\Http\Controllers\xController::class,'store']);
 Route::get('/ekle',[ekleController::class,'create']);
 Route::post('/ekler',[ekleController::class,'store'])->name('oyun.ekle.post');

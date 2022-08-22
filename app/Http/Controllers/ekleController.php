@@ -11,6 +11,17 @@ class ekleController extends Controller
    }
    public function store(Request $request){
 
+        /*$isim = $request->input('isim');
+        dd($isim);*/
+
+       /*if ($request->has(['oyunid','isim'])){
+           echo "var";
+       }
+       else{
+           echo "yok";
+       }*/
+       $image = $request->file('image');
+       dd($image);
 
    }
 }
